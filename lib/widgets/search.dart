@@ -116,11 +116,11 @@ class Search extends SearchDelegate {
                           itemBuilder: (context, index) => ListTile(
                             leading: const Icon(
                               Icons.star,
-                              color: Colors.amber,
+                              color: Colors.amber, 
                             ),
                             minLeadingWidth: 1,
                             horizontalTitleGap: 20,
-                            // tileColor: Colors.grey,
+                            
                             dense: true,
                             title: Text(snapshot.data!.definitions[index].name,
                                 style: const TextStyle(
@@ -137,7 +137,8 @@ class Search extends SearchDelegate {
                         );
                       }
                     },
-                  );
+                  ));
+    
   }
 
   @override
